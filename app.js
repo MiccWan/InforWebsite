@@ -20,7 +20,7 @@ app.get('/',function(req,res){
 })
 
 app.listen(port, function () {
-  console.log(colors.setup('INFOR web listening on port '+port));
+  console.log( colors.setup('INFOR web listening on port '+port) );
 });
 
 
