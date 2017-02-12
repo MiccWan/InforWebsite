@@ -3,26 +3,45 @@
 	<head>
 		<!--Import Google Icon Font-->
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<!--Import materialize.css-->
+		<!--Import css-->
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style type="text/css">
+			.major {
+				/*-moz-transform: rotate(-45deg);*/
+				-webkit-transform: rotate(-45deg);
+				/*-ms-transform: rotate(-45deg);*/
+				transform: rotate(-45deg);
+				border-radius: 3px;
+				border: solid 2px #fff;
+				display: inline-block;
+				font-size: 1.35em;
+				height: calc(3em + 2px);
+				line-height: 3em;
+				text-align: center;
+				width: calc(3em + 2px);
+			}
+	</style>
 	</head>
 
-	<body>
-		<a href="http://google.com" target="_blank">jizz</a>
+	<body class="is-loading">
 		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 		
+		
+		<!-- Nav Bar -->
 		<!-- Dropdown Structure -->
 		<ul id="dropdown1" class="dropdown-content">
-			<li><a href="#!">one</a></li>
+			<li><a href="https://blog.infor.org"><i class="material-icons left">person_pin</i>Blog</a></li>
 			<li class="divider"></li>
-			<li><a href="#!">two</a></li>
+			<li><a href="https://ann.infor.org">Ann</a></li>
 			<li class="divider"></li>
-			<li><a href="#!">three</a></li>
+			<li><a href="https://mail.infor.org">Mail</a></li>
 		</ul>
 		<ul id="dropdown2" class="dropdown-content">
 			<li><a href="#!">one</a></li>
@@ -31,34 +50,115 @@
 			<li class="divider"></li>
 			<li><a href="#!">three</a></li>
 		</ul>
-		<div class="navbar-fixed">
-		<nav>
-			<div class="nav-wrapper container">
-				<a href="#" class="brand-logo">Logo</a>
-				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-				<ul class="right hide-on-med-and-down">
-					<li class="active"><a href="/">Home</a></li>
-					<li><a href="https://academy.infor.org">Academy</a></li>
-					<!-- Dropdown Trigger -->
-					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-				</ul>
-				<ul class="side-nav" id="mobile-demo">
-					<li class="active"><a href="/">Home</a></li>
-					<li><a href="https://academy.infor.org">Academy</a></li>
-					<!-- Dropdown Trigger -->
-					<li><a class="dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> 
-				</ul>
-			</div>
-		</nav>
-	</div>
+		<div id="header" class="navbar-fixed animated alt" style="height:0px">
+			<nav>
+				<div class="nav-wrapper nav-container">
+					<a href="#" class="brand-logo"><img style="vertical-align:middle;height:37px" src="/images/infor_logo.png"/></a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i style="font-size: 30px"class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<div class="row">
+							<div class="col">
+								<li><a href="/">Home<i class="material-icons left">home</i></a></li>
+							</div>
+							<div class="col">
+								<li><a href="https://academy.infor.org">Academy<i class="material-icons left">school</i></a></li>
+							</div>
+							<div class="col">
+								<li><a href="https://oj.infor.org">Online Judge<i class="material-icons left">error</i></a></li>
+							</div>
+							<div class="col">
+								<!-- Dropdown Trigger -->
+								<li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Else<i class="material-icons right">view_headline</i></a></li>
+							</div>
+						</div>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li class="active"><a href="/">Home</a></li>
+						<li><a href="https://academy.infor.org">Academy</a></li>
+						<!-- Dropdown Trigger -->
+						<li><a class="dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> 
+					</ul>
+				</div>
+			</nav>
+		</div>
 
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<p>jizz</p>
+		<!-- parllax -->
+		<div id="banner" class="parallax-container" style="height:100vh">
+			<a id="scale-demo" href="#!" class=" scale-transition scale-out">
+				<div class="caption center-align inner" style="opacity: 1; transform: translateY(0px) translateX(0px);z-index:1001">
+					<h2>INFOR</h2>
+					<p class="chinese">
+					台北市立建國高級中學<br />
+					Taipei Municipal Chien Kuo High School<br />
+					資訊社</p>
+				</div>
+				<a href="#one" class="more scrolly">Learn More</a>
+			</a>
+			<div class="parallax"><img class="responsive-img" src="/images/background/background1.jpg"></div>
+		</div>
+		
+
+
+		<div class="section white">
+			<div class="row container">
+				<h2 class="header">Parallax</h2>
+				<br><br><br><br><br><br><br><br><br><br><br><br>
+				<h2 class="header">Parallax</h2>
+				<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+			</div>
+		</div>
+		<div class="parallax-container">
+			<div class="parallax"><img class="responsive-img" src="/images/background/background1.jpg"></div>
+		</div> 
+
+	
 	</body>
+	<script src="https://infor.org/assets/js/jquery.scrollex.min.js"></script>
+
 	<script type="text/javascript">
 		$( document ).ready(function(){
-			$(".dropdown-button").dropdown({ hover: false });
+			$('.parallax').parallax();
 			$(".button-collapse").sideNav();
+			$(".dropdown-button").dropdown({ hover: false, belowOrigin:true });
 		})
+		var $window = $(window),
+			$body = $('body'),
+			$wrapper = $('#page-wrapper'),
+			$banner = $('#banner'),
+			$header = $('#header');
+
+		// Disable animations/transitions until the page has loaded.
+			// $body.addClass('is-loading');
+
+			$window.on('load', function() {
+				window.setTimeout(function() {
+					$body.removeClass('is-loading');
+					setTimeout(function(){
+						$('#scale-demo').addClass('scale-in')
+					},200)
+					console.log("jizz")
+				}, 20);
+			});
+
+
+		if ($banner.length > 0) {
+			$window.on('resize', function() { $window.trigger('scroll'); });
+			$banner.scrollex({
+				bottom:		$header.outerHeight(),
+				enter:		function() {
+					if(!($header.hasClass('alt'))){
+						$header.addClass('alt');
+						$header.addClass('fadeOut');
+						$header.removeClass('fadeIn');
+					}
+				},
+				leave:		function() {
+					$header.removeClass('alt')
+					$header.removeClass('fadeOut');
+					$header.addClass('fadeIn');
+				}
+			});
+		}
+
 	</script>
 </html>
